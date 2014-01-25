@@ -2,6 +2,8 @@
 
 A starting point for a scalable, maintainable CSS architecture. I have made a few changes of Ben Smithett's "Style" (https://github.com/bensmithett/style), converting all SASS files to SCSS, and removing SASS-Globbing dependencies for Rails 3.1-...Feel free to make changes or suggestions.
 
+# Read below or head over to https://github.com/bensmithett/style to see Ben Smithett says about his idea:
+
 - [Compass](http://compass-style.org/) with [vertical rhythm](http://compass-style.org/reference/compass/typography/vertical_rhythm/)
 - [SMACSS](http://smacss.com/) modules with [BEM](http://bem.info/method/) syntax for modifiers & subcomponents
 - A [Susy](http://susy.oddbird.net/) mobile-first responsive grid module
