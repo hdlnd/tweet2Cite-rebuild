@@ -1,0 +1,11 @@
+// -webkit- is the only required prefix now! http://caniuse.com/css-animation
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @keyframes #{$name} {
+    @content;
+  }
+}

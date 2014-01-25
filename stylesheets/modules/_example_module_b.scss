@@ -1,0 +1,19 @@
+.example-module-b {
+  @include pre(1);
+  @include span-columns(2);
+  @include post(1);
+  background-color: rgba(255, 0, 0, 0.5);
+  @include at-breakpoint($tablet-and-above) {
+    @include pre(1);
+    @include span-columns(6);
+    @include post(1);
+    background-color: rgba(0, 255, 0, 0.5);
+  }
+
+  @include at-breakpoint($desktop-and-above) {
+    @include pre(2);
+    @include span-columns(8);
+    @include post(2);
+    @include animation(flash 1s infinite);
+  }
+}

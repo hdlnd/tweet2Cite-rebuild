@@ -1,0 +1,30 @@
+// This module is a top-level Susy grid container.
+//
+// You can use Susy's at-breakpoint() in modules that are placed inside this container.
+// To use Susy's grid mixins (eg span-columns), use at-breakpoint-with-grid-settings() instead.
+//
+// You'll eventually want to delete the +susy-grid-background lines.
+//
+// http://susy.oddbird.net/guides/reference/
+
+.grid {
+  @include container;
+  @include susy-grid-background;
+  @include at-breakpoint($tablet-and-above) {
+    @include container;
+    @include susy-grid-background;
+  }
+
+  @include at-breakpoint($desktop-and-above) {
+    @include container;
+    @include susy-grid-background;
+    @if $lt-ie9 {
+      // Force static width for IE7+8
+      width: pxtoem(1024px);
+    }
+    @else {
+      // Constrain the fluid grid to a max width
+      max-width: pxtoem(1024px);
+    }
+  }
+}
